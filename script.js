@@ -1,14 +1,15 @@
-// Firebase 초기화 설정
+// Firebase 설정
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyDEfI30f12aodrYPV1WaKvussIZGeeYWig",
+  authDomain: "voiceverse-ad010.firebaseapp.com",
+  projectId: "voiceverse-ad010",
+  storageBucket: "voiceverse-ad010.firebasestorage.app",
+  messagingSenderId: "377567305141",
+  appId: "1:377567305141:web:1a89156faa0706d578cdfc",
+  measurementId: "G-487F8C7FH8"
 };
 
-// Firebase 앱 초기화
+// Firebase 초기화
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const storage = firebase.storage();
