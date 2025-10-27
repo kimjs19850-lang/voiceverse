@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoiceVerse | 15초 목소리로 감정 나누기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎙️ VoiceVerse</h1>
+    <p>15초 목소리로 감정과 생각을 나누세요</p>
+  </header>
+
+  <section id="upload-section">
+    <h2>📤 목소리 업로드</h2>
+
+    <label>
+      지역
+      <select id="region">
+        <option value="KR">🇰🇷 한국</option>
+        <option value="JP">🇯🇵 일본</option>
+        <option value="CN">🇨🇳 중국</option>
+        <option value="US">🇺🇸 미국</option>
+      </select>
+    </label>
+
+    <label>
+      닉네임
+      <input type="text" id="nickname" placeholder="닉네임 입력" />
+    </label>
+
+    <label>
+      음성 파일 (최대 15초)
+      <input type="file" id="audioFile" accept="audio/*" />
+    </label>
+
+    <button id="uploadBtn">업로드</button>
+
+    <div id="status"></div>
+  </section>
+
+  <section id="feed">
+    <h2>🗣️ 최신 목소리</h2>
+    <div id="voices"></div>
+  </section>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-storage-compat.js"></script>
+
+  <!-- 메인 로직 -->
+  <script src="script.js"></script>
+</body>
+</html>
